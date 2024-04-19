@@ -1,0 +1,106 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap");
+
+/*=============== MAGIC buttonn ===============*/
+.buttonn {
+  position: relative;
+  background: linear-gradient(180deg, hsl(200, 60%, 45%), hsl(200, 60%, 25%));
+  color: #fff;
+  padding: 1.5rem 2.20rem;
+  border-radius: 3rem;
+  transition: .4s;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 4.25;
+  text-align: center;
+  margin-left: 500px;
+  margin-top: 10px;
+}
+
+.buttonn::after {
+  content: '';
+  width: 80%;
+  height: 40%;
+  background: linear-gradient(80deg, 
+            hsl(217, 80%, 80%) 10%, 
+            hsl(217, 85%, 70%) 48%);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  margin: 0 auto;
+  border-radius: 3rem;
+  filter: blur(12px);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity .4s;
+}
+
+.buttonn__text {
+  position: relative;
+  z-index: 10;
+}
+
+.buttonn img {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  pointer-events: none;
+  transition: .6s;
+  opacity: 0;
+}
+
+/* Move 3D geometric elements */
+.buttonn__cone {
+  width: 18px;
+  transform: translate(-25px, -6px) rotate(55deg);
+  filter: blur(.5px);
+}
+
+.buttonn__torus {
+  width: 38px;
+  transform: translate(7px, -14px) rotate(80deg);
+}
+
+.buttonn__icosahedron {
+  width: 36px;
+  transform: translate(34px, -4px) rotate(-45deg);
+  filter: blur(.9px);
+}
+
+.buttonn__sphere {
+  width: 30px;
+  transform: translate(-5px, 15px) rotate(40deg);
+}
+
+/* View shadow gradient */
+.buttonn:hover::after {
+  opacity: 1;
+}
+
+/* buttonn scale */
+.buttonn:hover {
+  transform: scale(1.3);
+}
+
+/* View 3D geometric elements */
+.buttonn:hover img {
+  opacity: 1;
+}
+
+.buttonn:hover .buttonn__cone {
+  transform: translate(-38px, -10px) scale(1.2);
+}
+
+.buttonn:hover .buttonn__torus {
+  transform: translate(7px, -32px) scale(1.1);
+}
+
+.buttonn:hover .buttonn__icosahedron {
+  transform: translate(50px, -20px) scale(1.1);
+}
+
+.buttonn:hover .buttonn__sphere {
+  transform: translate(-14px, 20px) scale(1.1);
+}
+
+

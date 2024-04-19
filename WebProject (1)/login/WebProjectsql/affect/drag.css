@@ -1,0 +1,22 @@
+html, body {
+    margin: 0;
+    font-family: "Karla";
+    color: #546E7A;
+    min-height: 100vh;
+  min-width: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  }
+ 
+  #drag img
+{
+  width: 40px;
+    height: 50px;
+  margin-top: 200px;
+  margin-left: 10px;
+}

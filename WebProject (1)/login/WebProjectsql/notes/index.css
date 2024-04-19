@@ -1,0 +1,228 @@
+.modal-title {
+  color: rgb(21, 21, 89);
+  font-weight: 300;
+}
+
+.attr {
+  font-size: large;
+  font-weight: 50%;
+  color: rgb(83, 67, 67);
+}
+*{
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+  /* For color */
+  :root {
+    --grey: #F1F0F6;
+    --dark-grey: #8D8D8D;
+    --light: #fff;
+    --dark: #000;
+    --green: #81D43A;
+    --light-green: #E3FFCB;
+    --blue: #1775F1;
+    --light-blue: #D0E4FF;
+    --dark-blue: #0C5FCD;
+    --red: #FC3B56;
+  }
+.page {
+  display: flex;
+  background-color: #fcfafa;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+  /* Start Side bar */
+  nav{
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    width: 90px;
+    /* width: 280px; */
+    background: #000000;
+    overflow: hidden;
+    transition: 1s;
+  }
+  nav ul{
+    padding-left: 0px; 
+  }
+  nav:hover{
+    width: 280px;
+    transition: 1s;
+  }
+  .logo{
+    display: flex;
+    margin: 10px 0 0 10px;
+    padding-bottom: 3rem;
+  }
+  
+  .logo img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    
+  }
+  
+  a{
+    position: relative;
+    width: 280px;
+    font-size: 14px;
+    color: white;
+    display: table;
+    padding: 10px;
+    
+  }
+  nav .fas{
+    
+    position:relative;
+    width: 70px;
+    height: 40px;
+    top: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+  }
+
+  a:hover{
+    background: white;
+    color: black;
+  }
+  a:hover i{
+    color: #000080;
+    transition: 0.5s;
+  }
+  .logout{
+    position: absolute;
+    bottom: 0;
+  }
+  
+  li{
+    display:inline-block;
+  }
+/* End Side bar */
+ /* header */
+ navx {
+	background: var(--light);
+	height: 64px;
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+	grid-gap: 28px;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 100;
+  width: 100%;
+}
+navx .toggle-sidebar {
+	font-size: 18px;
+	cursor: pointer;
+}
+navx form {
+	max-width: 400px;
+	width: 100%;
+	margin-right: auto;
+}
+navx .form-group {
+	position: relative;
+}
+navx .form-group input {
+	width: 100%;
+	background: var(--grey);
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	padding: 10px 36px 10px 16px;
+	transition: all .3s ease;
+}
+navx .form-group input:focus {
+	box-shadow: 0 0 0 1px var(--blue), 0 0 0 4px var(--light-blue);
+}
+navx .form-group .icon {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 16px;
+	color: var(--dark-grey);
+}
+navx .nav-link {
+	position: relative;
+}
+navx .nav-link .icon {
+	font-size: 18px;
+	color: var(--dark);
+}
+
+navx .nav-link .badge {
+  position: absolute;
+  top: -10px;
+  
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--light);
+  background: var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+navx .divider {
+	width: 1px;
+	background: var(--grey);
+	height: 12px;
+	display: block;
+}
+navx .profile {
+	position: relative;
+}
+navx .profile img {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	object-fit: cover;
+	cursor: pointer;
+}
+navx .profile .profile-link {
+	position: absolute;
+	top: calc(100% + 10px);
+	right: 0;
+	background: var(--light);
+	padding: 10px 0;
+	box-shadow: 4px 4px 16px rgba(0, 0, 0, .1);
+	border-radius: 10px;
+	width: 160px;
+	opacity: 0;
+	pointer-events: none;
+	transition: all .3s ease;
+}
+navx .profile .profile-link.show {
+	opacity: 1;
+	pointer-events: visible;
+	top: 100%;
+}
+navx .profile .profile-link a {
+	padding: 10px 16px;
+	display: flex;
+	grid-gap: 10px;
+	font-size: 14px;
+	color: var(--dark);
+	align-items: center;
+	transition: all .3s ease;
+}
+navx .profile .profile-link a:hover {
+	background: var(--grey);
+}
+/* header */

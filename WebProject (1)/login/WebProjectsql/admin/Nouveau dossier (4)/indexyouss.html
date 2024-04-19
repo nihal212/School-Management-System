@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <section class="sidebar">
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html" class="custom-logo">
+                <img src="images/t2.png">
+                <span class="custom-nav-item">ENASH</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                <i class="custom-icon fas fa-menorah"></i>
+                <span class="custom-nav-item">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="fl.php">
+                <i class="custom-icon fas fa-comment"></i>
+                <span class="custom-nav-item">Etudiants</span>
+              </a>
+            </li>
+            <li>
+              <a href="prof.php">
+                <i class="custom-icon fas fa-database"></i>
+                <span class="custom-nav-item">Professeurs</span>
+              </a>
+            </li>
+            <li>
+              <a href="Emploi.html">
+                <i class="custom-icon fas fa-chart-bar"></i>
+                <span class="custom-nav-item">Emploi Du Temps</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="custom-icon fas fa-cog"></i>
+                <span class="custom-nav-item">Setting</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="custom-logout">
+                <i class="custom-icon fas fa-sign-out-alt"></i>
+                <span class="custom-nav-item">Log out</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #dfe9f5;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 90px;
+  background: #000000;
+  overflow: hidden;
+  transition: 1s;
+}
+
+
+.sidebar:hover {
+  width: 280px;
+  transition: 1s;
+}
+
+.custom-logo {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0 34px;
+  padding:10px 0 0 0px; 
+  padding-bottom: 3rem;
+ 
+}
+
+
+
+
+.custom-logo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+a {
+  position: relative;
+  width: 280px;
+  font-size: 14px;
+  color: white;
+  display: table;
+  padding: 10px;
+}
+
+.custom-icon {
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.custom-nav-item {
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+
+a:hover {
+  background: white;
+  color: black;
+}
+
+a:hover .custom-icon {
+  color: #000080;
+  transition: 0.5s;
+}
+
+.custom-logout {
+  position: absolute;
+  bottom: 10px;
+}
+
+li {
+  display: block;
+}
+    </style>
+</body>
+</html>
